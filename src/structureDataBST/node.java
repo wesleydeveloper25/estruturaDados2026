@@ -1,4 +1,4 @@
-package structureData;
+package structureDataBST;
 
 public class node {
         int valor;
