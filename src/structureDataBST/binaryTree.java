@@ -29,19 +29,6 @@ public class binaryTree {
         }
     }
 
-    public node construirBalanceada(int[] vetor, int inicio, int fim) {
-        if (inicio > fim) return null;
-
-        int meio = (inicio + fim) / 2;
-
-        node no = new node(vetor[meio]);
-
-        no.esquerda = construirBalanceada(vetor, inicio, meio - 1);
-        no.direita = construirBalanceada(vetor, meio + 1, fim);
-
-        return no;
-    }
-
     public int altura(node no) {
 
         // Caso base: árvore vazia
